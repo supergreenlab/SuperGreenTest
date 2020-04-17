@@ -11,7 +11,7 @@ for i in {0..5}; do
   echo "setting led $i to 10%: $(curl -s -XPOST "http://$SERVER/i?k=LED_${i}_DUTY&v=10")"
 done
 
-sleep 5
+sleep 1
 echo "Sleep 2s"
 
 for i in {0..5}; do
